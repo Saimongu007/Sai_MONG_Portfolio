@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Saimong Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Saimong</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            <span>Project</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/Saimongu007" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <div class="home__img-glow"></div>
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path
+                                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="0" y="-5" width="200" height="210" href="profile.png"
+                                    preserveAspectRatio="xMidYMid slice" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hello, I'm Saimongu Marma</h1>
+                        <h3 class="home__subtitle">
+                            <span class="home__role-text"></span>
+                            <span class="home__cursor">|</span>
+                        </h3>
+                        <p class="home__tagline">Building reliable digital experiences through MERN and smart engineering.</p>
+                        <p class="home__description">Final year CSE student passionate about creating impactful digital solutions with modern web technologies.</p>
+                        
+                        <!-- Direct Social Icons -->
+                        <div class="home__social-direct">
+                            <a href="https://github.com/Saimongu007" target="_blank" class="home__social-direct-icon" title="GitHub">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" class="home__social-direct-icon" title="LinkedIn">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="#" download class="home__social-direct-icon" title="Resume">
+                                <i class="uil uil-file-download-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__buttons">
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                            <a download="" href="#" class="button button--flex button--white">
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container">
+                <div class="about__data">
+                    <!-- Currently Working Badge -->
+                    <div class="about__current-work">
+                        <span class="about__badge">💡 Currently building</span>
+                        <p class="about__project-name">Breez+ Academic Resource Sharing Platform</p>
+                    </div>
+
+                    <p class="about__description">Final year CSE student at East Delta University specializing in Frontend
+                            development. Passionate about building scalable web applications and solving real-world
+                        problems through code. Active in competitive programming and hackathons.</p>
+
+                    <!-- Tech Stack -->
+                    <div class="about__tech-stack">
+                        <h3 class="about__tech-title">Tech Stack</h3>
+                        <div class="about__tech-items">
+                            <span class="about__tech-item">
+                                <i class="uil uil-react"></i> React
+                            </span>
+                            <span class="about__tech-item">
+                                <i class="uil uil-server"></i> Node.js
+                            </span>
+                            <span class="about__tech-item">
+                                <i class="uil uil-mobile-android"></i> React Native
+                            </span>
+                            <span class="about__tech-item">
+                                <i class="uil uil-database"></i> Supabase
+                            </span>
+                            <span class="about__tech-item">
+                                <i class="uil uil-brackets-curly"></i> TypeScript
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="about__interests">
+                        <h3 class="about__interests-title">Interests & Hobbies</h3>
+                        <div class="about__interests-items">
+                            <span class="about__interest-item">
+                                <i class="uil uil-code"></i> Coding
+                            </span>
+                            <span class="about__interest-item">
+                                <i class="uil uil-trophy"></i> Hackathons
+                            </span>
+                            <span class="about__interest-item">
+                                <i class="uil uil-brain"></i> Competitive Programming
+                            </span>
+                            <span class="about__interest-item">
+                                <i class="uil uil-book-open"></i> Tech Learning
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Journey Timeline -->
+                    <div class="about__journey">
+                        <h3 class="about__journey-title">My Journey</h3>
+                        <div class="about__journey-timeline">
+                            <div class="about__journey-item">
+                                <div class="about__journey-icon">
+                                    <i class="uil uil-graduation-cap"></i>
+                                </div>
+                                <span class="about__journey-text">Student</span>
+                            </div>
+                            <div class="about__journey-arrow">→</div>
+                            <div class="about__journey-item">
+                                <div class="about__journey-icon">
+                                    <i class="uil uil-laptop-cloud"></i>
+                                </div>
+                                <span class="about__journey-text">Developer</span>
+                            </div>
+                            <div class="about__journey-arrow">→</div>
+                            <div class="about__journey-item">
+                                <div class="about__journey-icon">
+                                    <i class="uil uil-trophy"></i>
+                                </div>
+                                <span class="about__journey-text">Hackathon Finalist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__info">
+                        <div class="about__info-box">
+                            <i class="uil uil-graduation-cap about__info-icon"></i>
+                            <h3 class="about__info-title">Education</h3>
+                            <span class="about__info-subtitle">BSc in CSE (2022-2026)</span>
+                        </div>
+
+                        <div class="about__info-box">
+                            <i class="uil uil-briefcase-alt about__info-icon"></i>
+                            <h3 class="about__info-title">Projects</h3>
+                            <span class="about__info-subtitle">5+ Completed</span>
+                        </div>
+
+                        <div class="about__info-box">
+                            <i class="uil uil-trophy about__info-icon"></i>
+                            <h3 class="about__info-title">Achievements</h3>
+                            <span class="about__info-subtitle">Hackathon Finalist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills & Expertise</h2>
+            <span class="section__subtitle">My technical proficiency</span>
+
+            <div class="skills__content-wrapper container">
+                <!-- Frontend Skills -->
+                <div class="skills__category">
+                    <div class="skills__category-header">
+                        <span class="skills__category-icon">🟣</span>
+                        <h3 class="skills__category-title">Frontend</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-react skills__item-icon"></i>
+                                <span class="skills__item-name">React</span>
+                                <span class="skills__item-level">90%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 90%"></div>
+                            </div>
+                            <p class="skills__item-desc">Building dynamic UIs with hooks and context</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-java-script skills__item-icon"></i>
+                                <span class="skills__item-name">JavaScript</span>
+                                <span class="skills__item-level">85%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 85%"></div>
+                            </div>
+                            <p class="skills__item-desc">ES6+, async/await, DOM manipulation</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-wind skills__item-icon"></i>
+                                <span class="skills__item-name">Tailwind CSS</span>
+                                <span class="skills__item-level">88%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 88%"></div>
+                            </div>
+                            <p class="skills__item-desc">Utility-first CSS framework</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-html5 skills__item-icon"></i>
+                                <span class="skills__item-name">HTML & CSS</span>
+                                <span class="skills__item-level">92%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 92%"></div>
+                            </div>
+                            <p class="skills__item-desc">Semantic HTML, responsive design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skills__category">
+                    <div class="skills__category-header">
+                        <span class="skills__category-icon">🟣</span>
+                        <h3 class="skills__category-title">Backend</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-server skills__item-icon"></i>
+                                <span class="skills__item-name">Node.js</span>
+                                <span class="skills__item-level">85%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 85%"></div>
+                            </div>
+                            <p class="skills__item-desc">Server-side JavaScript runtime</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-arrow skills__item-icon"></i>
+                                <span class="skills__item-name">Express.js</span>
+                                <span class="skills__item-level">82%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 82%"></div>
+                            </div>
+                            <p class="skills__item-desc">RESTful API development</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-database skills__item-icon"></i>
+                                <span class="skills__item-name">MongoDB</span>
+                                <span class="skills__item-level">80%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 80%"></div>
+                            </div>
+                            <p class="skills__item-desc">NoSQL database, Mongoose ODM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Skills -->
+                <div class="skills__category">
+                    <div class="skills__category-header">
+                        <span class="skills__category-icon">🟣</span>
+                        <h3 class="skills__category-title">Mobile</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-mobile-android skills__item-icon"></i>
+                                <span class="skills__item-name">React Native</span>
+                                <span class="skills__item-level">78%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 78%"></div>
+                            </div>
+                            <p class="skills__item-desc">Cross-platform mobile apps</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-rocket skills__item-icon"></i>
+                                <span class="skills__item-name">Expo</span>
+                                <span class="skills__item-level">75%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 75%"></div>
+                            </div>
+                            <p class="skills__item-desc">Rapid mobile development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills__category">
+                    <div class="skills__category-header">
+                        <span class="skills__category-icon">🟣</span>
+                        <h3 class="skills__category-title">Tools</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-github skills__item-icon"></i>
+                                <span class="skills__item-name">Git & GitHub</span>
+                                <span class="skills__item-level">88%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 88%"></div>
+                            </div>
+                            <p class="skills__item-desc">Version control, collaboration</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-brackets-curly skills__item-icon"></i>
+                                <span class="skills__item-name">VS Code</span>
+                                <span class="skills__item-level">90%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 90%"></div>
+                            </div>
+                            <p class="skills__item-desc">Code editor, extensions</p>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__item-header">
+                                <i class="uil uil-cloud-database-tree skills__item-icon"></i>
+                                <span class="skills__item-name">Supabase</span>
+                                <span class="skills__item-level">75%</span>
+                            </div>
+                            <div class="skills__progress">
+                                <div class="skills__progress-bar" style="width: 75%"></div>
+                            </div>
+                            <p class="skills__item-desc">Backend as a service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== EDUCATION ====================-->
+        <section class="education section">
+            <h2 class="section__title">Education</h2>
+            <span class="section__subtitle">My academic background</span>
+
+            <div class="education__container container">
+                <div class="education__timeline">
+                    <!-- University -->
+                    <div class="education__item">
+                        <div class="education__card">
+                            <div class="education__icon-box">
+                                <i class="uil uil-graduation-cap"></i>
+                            </div>
+                            <div class="education__info">
+                                <div class="education__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    September 2022 - September 2026
+                                </div>
+                                <h3 class="education__title">East Delta University</h3>
+                                <p class="education__subtitle">Bachelor of Science in Computer Science and Engineering</p>
+                                <p class="education__description">Specializing in MERN stack development and software engineering</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Higher Secondary -->
+                    <div class="education__item">
+                        <div class="education__card">
+                            <div class="education__icon-box">
+                                <i class="uil uil-book-open"></i>
+                            </div>
+                            <div class="education__info">
+                                <div class="education__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - 2021
+                                </div>
+                                <h3 class="education__title">Rangamati Govt College</h3>
+                                <p class="education__subtitle">Higher Secondary Certificate</p>
+                                <p class="education__description">Science background with focus on mathematics and physics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary -->
+                    <div class="education__item">
+                        <div class="education__card">
+                            <div class="education__icon-box">
+                                <i class="uil uil-book-alt"></i>
+                            </div>
+                            <div class="education__info">
+                                <div class="education__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019
+                                </div>
+                                <h3 class="education__title">Rani Doyamoyee High School</h3>
+                                <p class="education__subtitle">Secondary School Certificate</p>
+                                <p class="education__description">Strong foundation in science and mathematics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ACHIEVEMENTS ====================-->
+        <section class="achievements section">
+            <h2 class="section__title">Achievements</h2>
+            <span class="section__subtitle">Milestones & accomplishments</span>
+
+            <div class="achievements__container container">
+                <div class="achievements__grid">
+                    <!-- Achievement 1 -->
+                    <div class="achievements__box">
+                        <div class="achievements__icon-box">
+                            <i class="uil uil-trophy"></i>
+                        </div>
+                        <div class="achievements__year">2024</div>
+                        <h3 class="achievements__title">Hackathon Finalist</h3>
+                        <p class="achievements__subtitle">East West University</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievements__box">
+                        <div class="achievements__icon-box">
+                            <i class="uil uil-users-alt"></i>
+                        </div>
+                        <div class="achievements__year">2023 - 2025</div>
+                        <h3 class="achievements__title">Sub-Executive</h3>
+                        <p class="achievements__subtitle">EDU Computer Club</p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievements__box">
+                        <div class="achievements__icon-box">
+                            <i class="uil uil-brackets-curly"></i>
+                        </div>
+                        <div class="achievements__year">2023</div>
+                        <h3 class="achievements__title">100+ LeetCode</h3>
+                        <p class="achievements__subtitle">Problem Solving</p>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="achievements__box">
+                        <div class="achievements__icon-box">
+                            <i class="uil uil-award"></i>
+                        </div>
+                        <div class="achievements__year">2023</div>
+                        <h3 class="achievements__title">IUPC Participant</h3>
+                        <p class="achievements__subtitle">Premier University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid">
+                <!--==================== SERVICES 1 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-brackets-curly services__icon"></i>
+                        <h3 class="services__title">Full Stack <br> Development</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Full Stack <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Build complete MERN stack applications</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>RESTful API development with Node.js</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>MongoDB database design and integration</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Authentication and security implementation</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SERVICES 2 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-react services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Development</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Responsive React applications with modern UI</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Tailwind CSS and Bootstrap styling</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Interactive user interfaces and animations</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Cross-browser compatibility and optimization</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SERVICES 3 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-microchip services__icon"></i>
+                        <h3 class="services__title">Embedded <br> Systems</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Embedded <br> Systems</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Arduino and AVR microcontroller programming</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>RFID and IoT system development</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Sensor integration and automation</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Embedded C programming for hardware projects</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Porojects</h2>
+            <span class="section__subtitle">Featured projects & case studies</span>
+
+            <div class="portfolio__container container">
+                <div class="portfolio__grid">
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="portfolio__card">
+                        <div class="portfolio__img-wrapper">
+                            <img src="/assets/FloodGuard Aid Network Overview.png" alt="FloodGuard Aid Network" class="portfolio__img">
+                            <div class="portfolio__difficulty">
+                                <span class="difficulty-badge difficulty--advanced">Advanced</span>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio__content">
+                            <div class="portfolio__header">
+                                <h3 class="portfolio__title">FloodGuard Aid Network</h3>
+                                <span class="portfolio__role">Full Stack Developer</span>
+                            </div>
+                            
+                            <p class="portfolio__description">
+                                Enterprise-grade disaster relief platform connecting volunteers with flood victims through real-time geolocation, interactive mapping, and cloud-based coordination system.
+                            </p>
+                            
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">React</span>
+                                <span class="portfolio__tag">Node.js</span>
+                                <span class="portfolio__tag">MongoDB</span>
+                                <span class="portfolio__tag">Maps API</span>
+                                <span class="portfolio__tag">Geolocation</span>
+                            </div>
+                            
+                            <div class="portfolio__buttons">
+                                <a href="https://flood-guard.vercel.app/" target="_blank" class="portfolio__btn portfolio__btn--primary">
+                                    <i class="uil uil-eye"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/aroyy007/FloodGuard_Aid_Network" target="_blank" class="portfolio__btn portfolio__btn--secondary">
+                                    <i class="uil uil-github"></i> GitHub
+                                </a>
+                                <a href="#" class="portfolio__btn portfolio__btn--outline">
+                                    <i class="uil uil-file-alt"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 2 ====================-->
+                    <div class="portfolio__card">
+                        <div class="portfolio__img-wrapper">
+                            <img src="https://via.placeholder.com/400x300/6366f1/ffffff?text=RFID+System" alt="RFID Access Control" class="portfolio__img">
+                            <div class="portfolio__difficulty">
+                                <span class="difficulty-badge difficulty--intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio__content">
+                            <div class="portfolio__header">
+                                <h3 class="portfolio__title">RFID Access Control System</h3>
+                                <span class="portfolio__role">IoT Developer</span>
+                            </div>
+                            
+                            <p class="portfolio__description">
+                                Secure RFID-based authentication system featuring servo motor lock integration, LCD display interface, and real-time security alert mechanisms.
+                            </p>
+                            
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">Embedded C</span>
+                                <span class="portfolio__tag">AVR</span>
+                                <span class="portfolio__tag">RFID</span>
+                                <span class="portfolio__tag">IoT</span>
+                                <span class="portfolio__tag">Arduino</span>
+                            </div>
+                            
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Saimongu007/RFID_Acces_Control_System" target="_blank" class="portfolio__btn portfolio__btn--secondary">
+                                    <i class="uil uil-github"></i> GitHub
+                                </a>
+                                <a href="#" class="portfolio__btn portfolio__btn--outline">
+                                    <i class="uil uil-file-alt"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 3 ====================-->
+                    <div class="portfolio__card">
+                        <div class="portfolio__img-wrapper">
+                            <img src="/assets/Food Service Management.png" alt="Food Service Management" class="portfolio__img">
+                            <div class="portfolio__difficulty">
+                                <span class="difficulty-badge difficulty--beginner">Beginner</span>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio__content">
+                            <div class="portfolio__header">
+                                <h3 class="portfolio__title">Food Service Management</h3>
+                                <span class="portfolio__role">Backend Developer</span>
+                            </div>
+                            
+                            <p class="portfolio__description">
+                                Console-based cafeteria management system with comprehensive ordering, automated billing, sales analytics, and persistent file I/O storage.
+                            </p>
+                            
+                            <div class="portfolio__tags">
+                                <span class="portfolio__tag">C Programming</span>
+                                <span class="portfolio__tag">File I/O</span>
+                                <span class="portfolio__tag">Data Structures</span>
+                            </div>
+                            
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Saimongu007/Food_Service_Management_In_Cafeteria" target="_blank" class="portfolio__btn portfolio__btn--secondary">
+                                    <i class="uil uil-github"></i> GitHub
+                                </a>
+                                <a href="#" class="portfolio__btn portfolio__btn--outline">
+                                    <i class="uil uil-file-alt"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">Have a project in mind?</h2>
+                        <p class="project__description">Let's collaborate and build something amazing together. I'm
+                            available for freelance projects and collaborations.</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Get In Touch
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="https://via.placeholder.com/232x250/ffffff/6366f1?text=Project" alt=""
+                        class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Let's Collaborate</h2>
+            <span class="section__subtitle">Ready to bring your ideas to life</span>
+
+            <!-- CTA Banner -->
+            <div class="contact__cta container">
+                <div class="contact__cta-content">
+                    <span class="contact__cta-icon">🚀</span>
+                    <h3 class="contact__cta-title">Ready to work together?</h3>
+                    <p class="contact__cta-text">I'm available for freelance, part-time, and collaboration-based projects. Let's create something amazing!</p>
+                </div>
+                <div class="contact__cta-buttons">
+                    <a href="https://www.linkedin.com/in/saimongu-marma/" target="_blank" class="contact__cta-btn contact__cta-btn--linkedin">
+                        <i class="uil uil-linkedin"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                    <a href="/assets/resume.pdf" download class="contact__cta-btn contact__cta-btn--resume">
+                        <i class="uil uil-file-download-alt"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact__container container grid">
+                <!-- Contact Information -->
+                <div class="contact__info-wrapper">
+                    <h3 class="contact__info-title">Get In Touch</h3>
+                    <p class="contact__info-description">Have a project in mind or just want to chat? Feel free to reach out through any of these channels.</p>
+                    
+                    <div class="contact__information">
+                        <div class="contact__info-icon">
+                            <i class="uil uil-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact__title">Email</h4>
+                            <a href="mailto:saimongumarma39@gmail.com" class="contact__subtitle">saimongumarma39@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <div class="contact__info-icon">
+                            <i class="uil uil-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact__title">Phone</h4>
+                            <a href="tel:+8801660194970" class="contact__subtitle">+880 1660 194970</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <div class="contact__info-icon">
+                            <i class="uil uil-map-marker"></i>
+                        </div>
+                        <div>
+                            <h4 class="contact__title">Location</h4>
+                            <span class="contact__subtitle">Rangamati, Chattogram, Bangladesh</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__availability">
+                        <div class="contact__status-indicator"></div>
+                        <span class="contact__status-text">Available for new opportunities</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form action="" class="contact__form">
+                    <h3 class="contact__form-title">Send Me a Message</h3>
+                    
+                    <div class="contact__form-group">
+                        <div class="contact__content">
+                            <label for="contact-name" class="contact__label">Your Name</label>
+                            <input type="text" id="contact-name" name="name" class="contact__input" placeholder="John Doe" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="contact-email" class="contact__label">Your Email</label>
+                            <input type="email" id="contact-email" name="email" class="contact__input" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="contact-project" class="contact__label">Project Type</label>
+                        <input type="text" id="contact-project" name="project" class="contact__input" placeholder="Web Development, Mobile App, etc." required>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="contact-message" class="contact__label">Your Message</label>
+                        <textarea id="contact-message" name="message" rows="6" class="contact__input contact__textarea" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__submit-btn">
+                        <span>Send Message</span>
+                        <i class="uil uil-message"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Footer Top -->
+            <div class="footer__content">
+                <!-- Brand Section -->
+                <div class="footer__brand">
+                    <h3 class="footer__brand-name">Saimongu Marma</h3>
+                    <p class="footer__brand-text">Building digital experiences with modern web technologies</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__links-wrapper">
+                    <h4 class="footer__links-title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#portfolio" class="footer__link">Projects</a></li>
+                        <li><a href="/assets/resume.pdf" download class="footer__link">Resume</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer__social-wrapper">
+                    <h4 class="footer__social-title">Connect</h4>
+                    <div class="footer__socials">
+                        <a href="https://github.com/Saimongu007" target="_blank" class="footer__social" aria-label="GitHub">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saimongu-marma/" target="_blank" class="footer__social" aria-label="LinkedIn">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social" aria-label="Facebook">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2024 Saimongu Marma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--==================== GSAP ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
